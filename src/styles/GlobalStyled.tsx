@@ -12,5 +12,6 @@ export const GlobalStyles = createGlobalStyle`
 
     body {
         color: snow;
+        background-color: #1F1F20;
     }
 `
