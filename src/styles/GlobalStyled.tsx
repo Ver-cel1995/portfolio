@@ -10,6 +10,19 @@ export const GlobalStyles = createGlobalStyle`
         margin: 0;
     }
 
+    h3 {
+        font-weight: 700;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
     body {
         margin: 0;
         font-family: 'Poppins', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -22,7 +35,8 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     a {
-        text-decoration: none
+        text-decoration: none;
+        cursor: pointer;
     }
 
     ul {
@@ -32,13 +46,19 @@ export const GlobalStyles = createGlobalStyle`
     button {
         background-color: unset;
         border: none;
+        cursor: pointer;
+        color: ${theme.colors.font};
+    }
+
+    section {
+        padding: 100px 0;
     }
 
     section:nth-of-type(odd) {
-        background-color: ${theme.colors.primagyBg}
+        background-color: ${theme.colors.secondaryBg}
     }
 
     section:nth-of-type(even) {
-        background-color: ${theme.colors.secondaryBg}
+        background-color: ${theme.colors.primagyBg}
     }
 `

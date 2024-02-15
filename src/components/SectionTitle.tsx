@@ -1,7 +1,24 @@
 import styled from "styled-components";
+import { theme } from "../styles/Theme";
 
 export const SectionTitle = styled.h2`
     font-size: 36px;
     text-align: center;
-    margin-bottom: 20px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+    letter-spacing: 5px;
+    position: relative;
+    margin-bottom: 90px;
+
+    &::before {
+        content: "";
+        width: 55px;
+        height: 2px;
+        position: absolute;
+        display: inline-block;
+        background-color: ${theme.colors.accent};
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -30px;
+    }
 `
