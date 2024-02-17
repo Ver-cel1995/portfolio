@@ -32,6 +32,8 @@ export const GlobalStyles = createGlobalStyle`
         -moz-osx-font-smoothing: grayscale;
         color: ${theme.colors.font};
         line-height: 1.2;
+
+        min-width: 360px;
     }
 
     a {
@@ -52,13 +54,17 @@ export const GlobalStyles = createGlobalStyle`
 
     section {
         padding: 100px 0;
+
+        @media ${theme.media.mobile} {
+            padding: 80px 0;
+        }
     }
 
     section:nth-of-type(odd) {
-        background-color: ${theme.colors.secondaryBg}
+        background-color: ${theme.colors.primagyBg}
     }
 
     section:nth-of-type(even) {
-        background-color: ${theme.colors.primagyBg}
+        background-color: ${theme.colors.secondaryBg}
     }
-`
+`;
