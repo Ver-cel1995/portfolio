@@ -50,9 +50,11 @@ const worksData = [
 
 export const Works = () => {
   const [currentFilterStatus, setCurrentFilterStatus] = useState("all")
+  console.log(currentFilterStatus) // смотря что кликнул пользователь
   let filterWorks = worksData
 
-  if (currentFilterStatus === "Landing") {
+  if (currentFilterStatus === "landing") { // "landing" - это status в массиве tabsItems, если false, то 
+                                            // значением будет ("all")
     filterWorks = worksData.filter(work => work.type === "landing")
   }
 
